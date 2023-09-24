@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* border: 1px solid red; */
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --white-color: hsl(0, 0%, 100%);
+    --bg-color: #36384DFF;
+    --input-border: hsl(231, 7%, 60%);
+    --submit-bg:#232741FF;
+    --submit-hover:linear-gradient(to right, #FF5478FF, #FC683EFF)
+}
+
+body {
+    background-color: var(--bg-color);
+
+}
+
+.container {
+    width: 930px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    padding: 24px;
+    padding-left: 64px;
+    border-radius: 25px;
+    background-color: var(--white-color);
+}
+
+.left {
+    width: 55%;
+}
+
+.left h1 {
+    font-size: 57px;
+    margin-top: 75px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.left .title {
+    margin-bottom: 30px;
+}
+
+ul {
+    margin-bottom: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+li img {
+    margin-right: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 800;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.email {
+    cursor: pointer;
+    padding-left: 24px;
+    outline: none;
+    width: 375px;
+    height: 56px;
+    font-size: 1.1rem;
+    border: 1px solid var(--input-border);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.submit{
+    cursor: pointer;
+    width: 375px;
+    height: 56px;
+    border-radius: 10px;
+    color: var(--white-color);
+    outline: none;
+    border: transparent;
+    background-color: var(--submit-bg);
+    font-size: 1rem;
+    margin-bottom: 75px;
+}
+
+.submit:hover{
+    background-image: var(--submit-hover);
+}
+.right {
+    width: 45%;
+    overflow: hidden;
+    border-radius: 15px;
+    background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+}
