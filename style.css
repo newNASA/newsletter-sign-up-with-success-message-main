@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    /* border: 1px solid red; */
 }
 
 li {
@@ -11,6 +10,8 @@ li {
 }
 
 :root {
+    --error:hsl(4, 100%, 67%);
+    --error-bg:#FEE9E5FF;
     --white-color: hsl(0, 0%, 100%);
     --bg-color: #36384DFF;
     --input-border: hsl(231, 7%, 60%);
@@ -65,11 +66,25 @@ li img {
     margin-right: 20px;
 }
 
+.form-div{
+    width: 375px;   
+    display: flex;
+    justify-content: space-between;
+}
+
 label {
-    display: block;
+    display: inline-block;
     font-weight: 800;
     font-size: 12px;
     margin-bottom: 10px;
+}
+
+span{
+    display: none;
+    font-weight: 800;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: var(--error);
 }
 
 .email {
@@ -105,4 +120,45 @@ label {
     overflow: hidden;
     border-radius: 15px;
     background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+}
+
+.thanks{
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 34px;
+    background-color: var(--white-color);
+    display: none;
+}
+
+.thanks h1{
+    font-size: 56px;
+    margin-top: 14px;
+    color: var(--submit-bg);
+    line-height: 60px;
+    margin-bottom: 25px;
+}
+
+.thanks p{
+    color: var(--submit-bg);
+    width: 376px;    
+}
+
+button{
+    cursor: pointer;
+    width: 375px;
+    height: 56px;
+    border-radius: 10px;
+    color: var(--white-color);
+    outline: none;
+    border: transparent;
+    background-color: var(--submit-bg);
+    font-size: 1rem;
+    margin-top: 25px;
+}
+
+button:hover{
+    background-image: var(--submit-hover);
 }

@@ -27,32 +27,26 @@
         <li><img src="./assets/images/icon-list.svg" alt="">Measuring to ensure updates are a success</li>
         <li><img src="./assets/images/icon-list.svg" alt="">And much more!</li>
       </ul>
-      <label for="email">Email address</label>
+      <div class="form-div">
+        <label for="email">Email address</label>
+        <span>Valid email required</span>
+      </div>
       <form action="">
-        <input type="email" name="email" id="email" class="email" placeholder="email@company.com" required> 
-        <input type="submit" value="Subscribe to monthly newsletter" class="submit">
+        <input type="email" name="email" id="email" class="email" placeholder="email@company.com"> 
+        <input type="submit" value="Subscribe to monthly newsletter" class="submit" name="submit">
       </form>
     </div>
     <div class="right"></div>
   </div>
 
-  
-  <!-- Sign-up form start -->
-<!-- 
+  <div class="thanks">
+    <img src="./assets/images/icon-success.svg" alt="">
+    <h1>Thanks for <br> subscribing!</h1>
+    <p class="thanks-text"></p>
+    <button>Dismiss message</button>
+  </div>
 
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com.
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message --> 
-
-  <!-- Success message end -->
+  <script src="script.js"></script>
 </body>
 
 </html>
